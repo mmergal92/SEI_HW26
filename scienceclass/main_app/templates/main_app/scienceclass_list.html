@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Class Index</h1>
+ <hr />
+<p>Class Index page here</p>
+<div class="card-action">
+    <a href="{% url 'scienceclass_update' scienceclass.id %}">Edit</a>
+    <a href="{% url 'scienceclass_delete' scienceclass.id %}">Delete</a>
+</div>
+{% endblock %}
